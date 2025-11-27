@@ -21,20 +21,39 @@ nav{background:var(--bege);border-bottom:3px solid var(--rosa);padding:2rem;marg
 h1{font-family:Crimson Text,serif;font-size:4rem;font-weight:600;font-style:italic;margin-bottom:1rem;color:var(--tinta)}
 footer{text-align:center;padding:3rem 2rem;border-top:3px solid var(--rosa);margin-top:6rem;background:var(--bege)}
 footer p{color:var(--cinza);font-style:italic}
+
+/* quadro de contato mantido */
 .contato-box{max-width:800px;margin:3rem auto;padding:4rem;background:white;border:4px solid var(--rosa);box-shadow:12px 12px 0 var(--lilas)}
-.saudacao{font-size:1.3rem;font-style:italic;margin-bottom:2rem;color:var(--tinta)}
-.contato-text{font-size:1.15rem;line-height:1.9;margin-bottom:2rem}
-.contato-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:3rem;padding-top:3rem;border-top:3px solid var(--rosa)}
-.contato-item{padding:1.5rem;background:var(--lilas);text-decoration:none;color:var(--tinta);transition:all 0.3s}
+
+/* saudação com imagem */
+.saudacao{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    font-size:1.3rem;
+    font-style:italic;
+    margin-bottom:1.5rem;
+    color:var(--tinta);
+}
+.saudacao img{
+    height:60px;
+    image-rendering:pixelated;
+    flex-shrink:0;
+}
+
+.contato-text{font-size:1.05rem;line-height:1.7;margin-bottom:1.2rem}
+.contato-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:2rem;padding-top:2rem;border-top:3px solid var(--rosa)}
+.contato-item{padding:1.1rem 1.3rem;background:var(--lilas);text-decoration:none;color:var(--tinta);transition:all 0.3s}
 .contato-item:hover{transform:translateY(-5px);box-shadow:6px 6px 0 var(--sage)}
 .contato-label{font-family:Space Mono,monospace;font-size:0.85rem;color:var(--cinza);margin-bottom:0.5rem;text-transform:uppercase}
-.contato-value{color:var(--tinta);font-weight:600;font-size:1.1rem}
-.assinatura{text-align:right;font-style:italic;margin-top:3rem;font-size:1.3rem}
+.contato-value{color:var(--tinta);font-weight:600;font-size:1.05rem}
+.assinatura{text-align:right;font-style:italic;margin-top:2.5rem;font-size:1.3rem}
 @media (max-width:768px){
 h1{font-size:2.5rem}
 .contato-box{padding:2.5rem}
 .contato-grid{grid-template-columns:1fr}
 .nav-container{flex-direction:column;align-items:flex-start}
+.saudacao{flex-direction:row}
 }
     </style>
 </head>
@@ -55,33 +74,38 @@ h1{font-size:2.5rem}
         <div class="container">
             <h1>Vamos Conversar</h1>
             <div class="contato-box">
-                <p class="saudacao">Caro leitor,</p>
-                <p class="contato-text">Se você chegou até aqui (e não foi só porque se perdeu clicando em coisas aleatórias), obrigada por dedicar seu tempo a conhecer meu trabalho.</p>
-                <p class="contato-text">Estou disponível para projetos freelance e colaborações. Seja para desenvolver uma aplicação do zero, contribuir com um projeto existente, ou simplesmente conversar sobre ideias, ficarei feliz em ouvir você.</p>
-                <p class="contato-text">Acredito em projetos que fazem sentido, em tecnologia com propósito, e em parcerias que vão além do código. Se isso ressoa com você, vamos conversar.</p>
-                <p class="contato-text" style="color:var(--cinza);font-style:italic">(E se você só quer trocar ideias sobre Dostoiévski ou recomendar um bom café, também aceito. Romannov aprova networking informal.)</p>
+                <p class="saudacao">
+                    <img src="meri_pixel_cute.png" alt="Merian em pixel art com hamster branco no ombro">
+                    Vamos tirar uma ideia do papel?
+                </p>
+
+                <p class="contato-text">
+                    Estou disponível para projetos freelance em desenvolvimento mobile e web,
+                    principalmente em educação, tecnologia e saúde mental.
+                </p>
+                <p class="contato-text">
+                    Me chama por onde for mais confortável para você:
+                </p>
+
                 <div class="contato-grid">
                     <a href="mailto:meriancaroline@gmail.com" class="contato-item">
                         <div class="contato-label">Email</div>
                         <div class="contato-value">meriancaroline@gmail.com</div>
                     </a>
-                    <a href="https://github.com/meriancaroline-dot" target="_blank" class="contato-item">
-                        <div class="contato-label">GitHub</div>
-                        <div class="contato-value">meriancaroline-dot</div>
+                    <a href="https://wa.me/5548996681214" target="_blank" class="contato-item">
+                        <div class="contato-label">WhatsApp</div>
+                        <div class="contato-value">(48) 99668-1214</div>
                     </a>
                     <a href="https://www.linkedin.com/in/merian-caroline-trevisan-509904259/" target="_blank" class="contato-item">
                         <div class="contato-label">LinkedIn</div>
                         <div class="contato-value">Merian Caroline Trevisan</div>
                     </a>
-                    <a href="https://medium.com/@meriancaroline" target="_blank" class="contato-item">
-                        <div class="contato-label">Medium</div>
-                        <div class="contato-value">@meriancaroline</div>
-                    </a>
-                    <a href="https://wa.me/5548996681214" target="_blank" class="contato-item">
-                        <div class="contato-label">WhatsApp</div>
-                        <div class="contato-value">(48) 99668-1214</div>
+                    <a href="https://github.com/meriancaroline-dot" target="_blank" class="contato-item">
+                        <div class="contato-label">GitHub</div>
+                        <div class="contato-value">meriancaroline-dot</div>
                     </a>
                 </div>
+
                 <p class="assinatura">Merian Caroline</p>
             </div>
         </div>
