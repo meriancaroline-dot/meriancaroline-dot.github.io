@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre — Merian C. Trevisan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Spectral:wght@300;400;600&family=Space+Mono:wght@400;600&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box}:root{--papel:#faf8f3;--bege:#f5ede4;--rosa:#f5d5d8;--lilas:#e8dff5;--sage:#d4e5d0;--tinta:#3d3d3d;--cinza:#7a7a7a}body{font-family:Spectral,serif;background:var(--papel);color:var(--tinta);line-height:1.8}body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;background-image:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;z-index:1}.container{max-width:1200px;margin:0 auto;padding:0 2rem;position:relative;z-index:2}nav{background:var(--bege);border-bottom:3px solid var(--rosa);padding:2rem;margin-bottom:4rem;box-shadow:0 4px 12px rgba(0,0,0,0.08)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem}.logo{font-family:Crimson Text,serif;font-size:1.8rem;font-weight:600;color:var(--tinta);text-decoration:none;font-style:italic}.nav-links{display:flex;gap:2rem;list-style:none;flex-wrap:wrap}.nav-links a{font-family:Space Mono,monospace;color:var(--tinta);text-decoration:none;padding:0.5rem 1rem;border:2px solid transparent;transition:all 0.3s;font-size:0.95rem}.nav-links a:hover,.nav-links a.active{border-color:var(--rosa);background:white}.page-content{min-height:80vh;padding:3rem 0}h1{font-family:Crimson Text,serif;font-size:4rem;font-weight:600;font-style:italic;margin-bottom:1rem;color:var(--tinta)}footer{text-align:center;padding:3rem 2rem;border-top:3px solid var(--rosa);margin-top:6rem;background:var(--bege)}footer p{color:var(--cinza);font-style:italic}.sobre-grid{display:grid;grid-template-columns:350px 1fr;gap:4rem;margin:3rem 0}.foto-frame{border:12px solid white;box-shadow:0 8px 24px rgba(0,0,0,0.12);background:var(--lilas);padding:1rem}.foto-frame img{width:100%;display:block}.foto-caption{margin-top:1rem;font-size:0.95rem;font-style:italic;color:var(--cinza);text-align:center;line-height:1.5}.sobre-text{font-size:1.15rem;line-height:1.9}.sobre-text p{margin-bottom:2rem}.destaque-box{background:var(--lilas);padding:2rem;margin:3rem 0;border-left:5px solid var(--rosa);font-style:italic}.sobre-text a{color:var(--tinta);text-decoration:underline;text-decoration-color:var(--rosa)}@media (max-width:968px){h1{font-size:2.5rem}.sobre-grid{grid-template-columns:1fr;gap:3rem}.foto-frame{max-width:350px;margin:0 auto}.nav-container{flex-direction:column;align-items:flex-start}}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Merian C. Trevisan</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="skills.html">Habilidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-content">
+        <div class="container">
+            <h1>Sobre Mim</h1>
+            <p style="font-size:1.2rem;color:var(--cinza);font-style:italic;margin-bottom:3rem">(Além do código)</p>
+            <div class="sobre-grid">
+                <div>
+                    <div class="foto-frame">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ1MCIgZmlsbD0iI2U4ZGZmNSIvPgogIDx0ZXh0IHg9IjUwJSIgeT0iNDAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiMzZDNkM2QiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgogICAgTWVyaWFuICsgUm9tYW5ub3YKICA8L3RleHQ+CiAgPHRleHQgeD0iNTAlIiB5PSI1NSUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0OCIgZmlsbD0iIzNkM2QzZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICDwn5C5CiAgPC90ZXh0PgogIDx0ZXh0IHg9IjUwJSIgeT0iNjUlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM3YTdhN2EiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc3R5bGU9Iml0YWxpYyI+CiAgICBDb2xvcXVlIHN1YSBmb3RvIGFxdWkhCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Merian com Romannov">
+                    </div>
+                    <p class="foto-caption">Romannov: crítico oficial de código e co-autor das minhas crises existenciais. Tem nome de czar russo mas temperamento de artista incompreendido.</p>
+                </div>
+                <div class="sobre-text">
+                    <p>Oi! Sou a Merian, mas pode me chamar de Meri (ou de "aquela dev que debugga às 2h da manhã ouvindo Dostoiévski em audiobook").</p>
+                    <p>Nas horas vagas (que não são muitas), escrevo no <a href="https://medium.com/@meriancaroline" target="_blank">Medium</a>, leio literatura russa e filosofia existencialista — porque melancolia literária combina perfeitamente com debugging às 2h da manhã. Também cuido do Romannov, meu hamster, que tem nome de czar russo mas temperamento de artista incompreendido.</p>
+                    <div class="destaque-box">"Meus interesses são um mix aparentemente aleatório mas que faz todo sentido: educação, tecnologia e saúde mental."</div>
+                    <p>Acredito que podemos usar código para criar ferramentas que realmente ajudem pessoas. Não apps que fingem resolver problemas, mas soluções pensadas com cuidado para necessidades reais. É nisso que trabalho.</p>
+                    <p>Quando não estou codando ou tendo crises sobre a natureza da existência humana, você pode me encontrar fazendo commits extremamente descritivos no Git ou escrevendo documentação que pessoas reais consigam entender.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Merian C. Trevisan</p>
+        <p>Feito com carinho (e aprovação do Romannov 🐹)</p>
+    </footer>
+</body>
+</html>
