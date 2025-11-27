@@ -1,4 +1,10 @@
-<style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades — Merian C. Trevisan</title>
+    <style>
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Spectral:wght@300;400;600&family=Space+Mono:wght@400;600&display=swap');
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -46,7 +52,7 @@ body::before{
     z-index:2;
 }
 
-/* CABEÇALHO MAIS LEVE */
+/* CABEÇALHO */
 
 nav{
     background:var(--bege);
@@ -81,8 +87,6 @@ nav{
     list-style:none;
     flex-wrap:wrap;
 }
-
-/* links em “pill”, menos rígidos */
 
 .nav-links a{
     font-family:"Space Mono",monospace;
@@ -131,5 +135,134 @@ footer p{
     font-style:italic;
 }
 
-/* daqui pra baixo entram estilos específicos da página (skills, contato, etc.) */
-</style>
+/* CABEÇALHO DE HABILIDADES */
+
+.skills-header{
+    margin-bottom:3.5rem;
+    border-left:6px solid var(--rosa);
+    padding-left:1.5rem;
+}
+
+.skills-label{
+    font-family:"Space Mono",monospace;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--cinza);
+    margin-bottom:0.6rem;
+}
+
+.skills-header h1{
+    font-family:"Crimson Text",serif;
+    font-size:3.2rem;
+    font-style:italic;
+    margin-bottom:0.5rem;
+    color:var(--tinta);
+}
+
+.skills-intro{
+    max-width:700px;
+    font-size:1.05rem;
+    margin-bottom:0;
+    font-style:italic;
+    color:var(--cinza);
+}
+
+/* GRID DE HABILIDADES */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:3rem;
+}
+
+.skill-card{
+    background:white;
+    border:4px solid var(--rosa);
+    padding:2.5rem;
+    transition:all 0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    box-shadow:8px 8px 0 var(--lilas);
+}
+
+.skill-card h3{
+    font-size:1.5rem;
+    color:var(--tinta);
+    margin-bottom:1rem;
+}
+
+.skill-card p{
+    color:var(--cinza);
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+@media (max-width:768px){
+    h1{font-size:2.5rem}
+    .skills-grid{grid-template-columns:1fr}
+    .nav-container{flex-direction:column;align-items:flex-start}
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Merian C. Trevisan</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="skills.html" class="active">Habilidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="container">
+            <header class="skills-header">
+                <div class="skills-label">caderno de habilidades</div>
+                <h1>O que eu sei fazer</h1>
+                <p class="skills-intro">
+                    Coisas que aprendi misturando TI, Letras, café e um pouco de teimosia.
+                </p>
+            </header>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Desenvolvimento Mobile</h3>
+                    <p>React Native e Expo para criar aplicações cross-platform. Do zero até a publicação na Play Store. Sei fazer apps que funcionam E que pessoas conseguem usar.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>React Native</h3>
+                    <p>Componentes, hooks, navegação, performance. Experiência real construindo apps em produção com usuários ativos.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Firebase</h3>
+                    <p>Auth, Firestore, Storage, Cloud Functions. Backend completo sem precisar montar servidor. Perfeito para quando você quer fazer um app funcionar sem vender um rim.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Interfaces que fazem sentido e não parecem feitas por quem odeia usuários. Acredito firmemente que design acessível não é opcional, é obrigação.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Git & Versionamento</h3>
+                    <p>Commits descritivos, branches organizadas, histórico que conta uma história coerente. Porque mensagens de commit tipo "atualizei coisas" deveriam ser crime.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Gamificação</h3>
+                    <p>Sistemas de engajamento que motivam sem virar slot machine psicológica. XP e conquistas são legais quando bem feitos, sinistros quando mal feitos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Merian C. Trevisan</p>
+        <p>Feito com carinho (e aprovação do Romannov 🐹)</p>
+    </footer>
+</body>
+</html>
